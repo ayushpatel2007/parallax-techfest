@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TECHFEST 2026 - Parallax Experience</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:black;
+color:white;
+overflow-x:hidden;
+}
+
+.parallax{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+background-attachment:fixed;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+.hero{
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3");
+}
+
+.ai{
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1485827404703-89b55fcc595e");
+}
+
+.robotics{
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1535378917042-10a22c95931a");
+}
+
+.startup{
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1522071820081-009f0129c71c");
+}
+
+.content{
+text-align:center;
+max-width:900px;
+padding:20px;
+}
+
+h1{
+font-size:6rem;
+color:#00ffff;
+text-shadow:0 0 20px cyan,
+0 0 40px cyan,
+0 0 80px cyan;
+margin-bottom:20px;
+}
+
+h2{
+font-size:4rem;
+color:#00ffff;
+margin-bottom:20px;
+}
+
+p{
+font-size:1.3rem;
+line-height:1.8;
+}
+
+.section{
+min-height:100vh;
+padding:100px 10%;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:#050505;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+width:100%;
+margin-top:50px;
+}
+
+.card{
+padding:50px;
+text-align:center;
+border:2px solid cyan;
+border-radius:20px;
+background:rgba(0,255,255,0.05);
+box-shadow:0 0 20px cyan;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 40px cyan;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 40px;
+border:none;
+border-radius:50px;
+background:cyan;
+font-size:1.1rem;
+cursor:pointer;
+font-weight:bold;
+transition:.4s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+box-shadow:0 0 30px cyan;
+}
+
+.footer{
+padding:80px;
+text-align:center;
+background:#000;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:3rem;
+}
+
+h2{
+font-size:2rem;
+}
+
+p{
+font-size:1rem;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<section class="parallax hero">
+<div class="content">
+<h1>TECHFEST 2026</h1>
+<p>Where Innovation Meets Imagination</p>
+<button class="btn"
+onclick="document.getElementById('events').scrollIntoView()">
+Enter Universe
+</button>
+</div>
+</section>
+
+<section class="section" id="events">
+<h2>Event Zones</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Hackathon</h3>
+<p>24-hour coding challenge.</p>
+</div>
+
+<div class="card">
+<h3>Robotics</h3>
+<p>Autonomous bots and competitions.</p>
+</div>
+
+<div class="card">
+<h3>AI Arena</h3>
+<p>Artificial Intelligence showcases.</p>
+</div>
+
+<div class="card">
+<h3>Gaming Zone</h3>
+<p>Esports tournaments and VR.</p>
+</div>
+
+<div class="card">
+<h3>Startup Expo</h3>
+<p>Meet innovators and founders.</p>
+</div>
+
+</div>
+</section>
+
+<section class="parallax ai">
+<div class="content">
+<h2>Artificial Intelligence</h2>
+<p>
+Explore machine learning, generative AI,
+computer vision, and futuristic innovations.
+</p>
+</div>
+</section>
+
+<section class="section">
+<h2>Future Technologies</h2>
+<p>
+TECHFEST 2026 brings together students,
+engineers, researchers and startups to
+build the future.
+</p>
+</section>
+
+<section class="parallax robotics">
+<div class="content">
+<h2>Robotics Revolution</h2>
+<p>
+Witness autonomous robots, drones,
+industrial automation and smart systems.
+</p>
+</div>
+</section>
+
+<section class="section">
+<h2>Innovation Hub</h2>
+<p>
+Competitions, workshops, networking and
+industry interactions under one roof.
+</p>
+</section>
+
+<section class="parallax startup">
+<div class="content">
+<h2>Startup Expo</h2>
+<p>
+Meet founders, investors and innovators
+shaping tomorrow's world.
+</p>
+</div>
+</section>
+
+<section class="footer">
+<h2>TECHFEST 2026</h2>
+<p>Designed by Ayush Patel</p>
+</section>
+
+</body>
+</html>
